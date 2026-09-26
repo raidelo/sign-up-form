@@ -11,6 +11,8 @@
       }
 
       #hero {
+        display: flex;
+        flex-direction: column;
         width: 35vw;
         height: 100vh;
         background-image: url("./assets/halie-west.jpg");
@@ -31,6 +33,16 @@
       #logo {
         height: 1.7em;
       }
+
+      #hero-credits {
+        margin: auto auto 0.5rem;
+        color: white;
+        font-size: 0.4rem;
+      }
+
+      #hero-credits > a {
+        color: inherit;
+      }
     </style>
   </head>
   <body>
@@ -40,7 +52,7 @@
         <span>ODIN</span>
       </div>
 
-      <div>
+      <div id="hero-credits">
         Photo by
         <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
         <a href="https://unsplash.com/">Unsplash</a>
