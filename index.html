@@ -14,6 +14,8 @@
         --main-left-padding: 1.8rem;
         --shadow-color: hsl(0, 0%, 75%);
         --green: #596d48;
+        --input-border: #e5e7eb;
+        --input-border-selected: hsl(240, 100%, 75%);
       }
 
       body {
@@ -95,6 +97,7 @@
 
       .input-row > div {
         flex-direction: column;
+        gap: 2px;
       }
 
       .input-row {
@@ -108,6 +111,16 @@
         font-size: 0.5em;
         font-weight: bold;
         color: hsl(0, 0%, 45%);
+      }
+
+      #form input {
+        border: 1px solid var(--input-border);
+        border-radius: 4px;
+      }
+
+      #form input:focus {
+        outline: 1px solid var(--input-border-selected);
+        box-shadow: 0 0 3px black;
       }
 
       #upper {
