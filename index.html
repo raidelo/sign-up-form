@@ -61,6 +61,11 @@
         background-color: hsl(0, 0%, 97%);
         padding: 3rem 3rem 1.4rem var(--main-left-padding);
       }
+
+      section#form,
+      #actions {
+        padding-left: var(--main-left-padding);
+      }
     </style>
   </head>
   <body>
@@ -123,8 +128,10 @@
           </div>
         </div>
       </section>
-      <button type="submit" form="form">Create Account</button>
-      <div>Already have an account? <a href="#">Log in</a></div>
+      <div id="actions">
+        <button type="submit" form="form">Create Account</button>
+        <div>Already have an account? <a href="#">Log in</a></div>
+      </div>
     </main>
   </body>
 </html>
