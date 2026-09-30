@@ -88,12 +88,12 @@
         padding-left: var(--main-left-padding);
       }
 
-      #form > div,
-      #form > div > div {
+      .input-row,
+      .input-row > div {
         display: flex;
       }
 
-      #form > div > div {
+      .input-row > div {
         flex-direction: column;
       }
 
@@ -156,7 +156,7 @@
         </div>
         <section id="form">
           <h1>Let's do this!</h1>
-          <div>
+          <div class="input-row">
             <div>
               <label for="user_name">FIRST NAME</label>
               <input type="text" name="user_name" id="user_name" />
@@ -166,7 +166,7 @@
               <input type="text" name="user_lastname" id="user_lastname" />
             </div>
           </div>
-          <div>
+          <div class="input-row">
             <div>
               <label for="email">EMAIL</label>
               <input type="text" name="email" id="email" />
@@ -176,7 +176,7 @@
               <input type="text" name="phone" id="phone" />
             </div>
           </div>
-          <div>
+          <div class="input-row">
             <div>
               <label for="password">PASSWORD</label>
               <input type="text" name="password" id="password" />
