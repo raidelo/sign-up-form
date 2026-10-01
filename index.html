@@ -16,6 +16,7 @@
         --green: #596d48;
         --input-border: #e5e7eb;
         --input-border-selected: hsl(240, 100%, 75%);
+        --input-border-invalid: hsl(0, 65%, 50%);
       }
 
       body {
@@ -111,13 +112,18 @@
       }
 
       #form input {
+        outline: none;
         border: 1px solid var(--input-border);
         border-radius: 4px;
       }
 
       #form input:focus {
-        outline: 1px solid var(--input-border-selected);
+        border-color: var(--input-border-selected);
         box-shadow: 0 0 3px black;
+      }
+
+      #form input:user-invalid {
+        border-color: var(--input-border-invalid);
       }
 
       #upper {
